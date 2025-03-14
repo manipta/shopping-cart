@@ -1,4 +1,12 @@
-export default productData=[
+export interface Product {
+  id: number;
+  title: string;
+  price: number;
+  img: string;
+  quantity: number;
+}
+
+export const productData: Product[] = [
   {
     id: 1,
     title: "Nothing Phone (2a)",
@@ -9,14 +17,14 @@ export default productData=[
   {
     id: 2,
     title: "Galaxy S25 Ultra 5G",
-    price: 90000.0,
+    price: 90_000.0,
     img: "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/1/x/3/-original-imah8pdnxdwzazyy.jpeg?q=70&crop=false",
     quantity: 1,
   },
   {
     id: 3,
     title: "Realme 12 Pro 5G",
-    price: 20000.0,
+    price: 20_000.0,
     img: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRm8d8U67XeNj09A-z5AP9W8jUAcASZbUVg6lyTpTMVel30_n-RE5JO9gkVQKbavNxh8WwlmRRbjkCDA_EnDT-DhQxraJJhayS46jBkDjAhuvp4EyeLdC1U2w&usqp=CAE",
     quantity: 1,
   },
